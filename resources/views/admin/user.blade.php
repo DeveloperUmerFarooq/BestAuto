@@ -16,10 +16,12 @@
       </button>
     </div>
 </div>
-  <div class="card-body">
+  <div class="card-body table-responsive">
+         {{ $dataTable->table(['class'=>'table table-striped table-hover table-dark w-100']) }}
   </div>
 </div>
 
 @endsection
 @push('scripts')
+{{ $dataTable->scripts(attributes: ['type' => 'module']) }}
 @endpush
