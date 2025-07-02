@@ -25,6 +25,7 @@ class UsersDataTable extends DataTable
         return (new EloquentDataTable($query))
             // ->addColumn('action', 'users.action')
             ->addIndexColumn()
+            ->addColumn('actions','actions')
             ->addColumn('role',function($query){
                 return $query->getRoleNames()->first();
             })
@@ -75,6 +76,7 @@ class UsersDataTable extends DataTable
             Column::make('role'),
             Column::make('created_at'),
             Column::make('updated_at'),
+            Column::make('actions')
         ];
     }
 
