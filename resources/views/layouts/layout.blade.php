@@ -26,16 +26,12 @@
     <script src="https://unpkg.com/split-type"></script>
   </head>
 <body>
-    @unless (request()->is('dashboard*'))
     @include('layouts.header')
-    @endunless
     @yield('page')
     @auth
     @include('modals.update-password')
     @endauth
-    @unless(request()->is('dashboard*'))
     @include('layouts.footer')
-    @endunless
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>

@@ -51,7 +51,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="{{asset('assets/js/main.js')}}"></script>
+    {{-- <script src="{{asset('assets/js/main.js')}}"></script> --}}
     <script>
   document.addEventListener('DOMContentLoaded', function() {
     const sidebarToggle = document.querySelector('.sidebar-toggle');

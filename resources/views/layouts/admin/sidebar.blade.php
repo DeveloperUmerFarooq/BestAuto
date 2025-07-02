@@ -8,31 +8,31 @@
       <nav class="sidebar-nav p-3">
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="{{ route('dashboard') }}" class="nav-link">
+            <a href="{{ route('admin.dashboard') }}" class="nav-link">
               <i class="fas fa-tachometer-alt me-2"></i>
               <span>Dashboard</span>
             </a>
           </li>
           <li class="nav-item mb-2">
-            <a href="" class="nav-link">
+            <a href="{{ route('admin.appointments') }}" class="nav-link">
               <i class="fas fa-calendar-check me-2"></i>
               <span>Appointments</span>
             </a>
           </li>
           <li class="nav-item mb-2">
-            <a href="" class="nav-link">
+            <a href="{{ route('admin.users') }}" class="nav-link">
               <i class="fas fa-users me-2"></i>
               <span>Users</span>
             </a>
           </li>
           <li class="nav-item mb-2">
-            <a href="" class="nav-link">
+            <a href="{{ route('admin.blogs') }}" class="nav-link">
               <i class="fas fa-blog me-2"></i>
               <span>Blogs</span>
             </a>
           </li>
           <li class="nav-item mb-2">
-            <a href="" class="nav-link">
+            <a href="{{ route('admin.services') }}" class="nav-link">
               <i class="fas fa-wrench me-2"></i>
               <span>Services</span>
             </a>

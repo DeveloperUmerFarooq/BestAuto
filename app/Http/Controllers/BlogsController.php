@@ -9,4 +9,8 @@ class BlogsController extends Controller
     public function index(){
         return view('blogs');
     }
+
+    public function adminIndex(){
+        return view('admin.blog');
+    }
 }

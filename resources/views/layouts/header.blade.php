@@ -146,7 +146,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="{{ route('dashboard') }}"
+                  href="{{ route('admin.dashboard') }}"
                   >Dashboard</a
                 >
               </li>
