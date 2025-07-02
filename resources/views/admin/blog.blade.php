@@ -5,7 +5,7 @@
 
 @section('content')
 <div class="card bg-black text-light border-primary shadow-sm mb-4">
-<div class="card-header border-bottom border-light py-3">
+<div class="card-header border-bottom border-primary py-3">
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
       <h4 class="mb-0">
         <i class="fas fa-blog me-2 text-primary"></i>
