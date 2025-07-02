@@ -24,6 +24,7 @@ class UsersDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             // ->addColumn('action', 'users.action')
+            ->addIndexColumn()
             ->addColumn('role',function($query){
                 return $query->getRoleNames()->first();
             })
@@ -43,7 +44,7 @@ class UsersDataTable extends DataTable
      */
     public function query(User $model): QueryBuilder
     {
-        return $model->newQuery();
+        return $model->newQuery()->latest();
     }
 
     /**
@@ -65,7 +66,10 @@ class UsersDataTable extends DataTable
     public function getColumns(): array
     {
         return [
-            Column::make('id'),
+            Column::computed('DT_RowIndex')
+            ->title('#')
+            ->orderable(false)
+            ->searchable(false),
             Column::make('name'),
             Column::make('email'),
             Column::make('role'),

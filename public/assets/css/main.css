@@ -703,3 +703,9 @@ swiper-container {
       width: 100%;
     }
   }
+
+  /* Data table pagination */
+.page-link{
+    background-color: var(--color4) !important;
+    color: white !important;
+}

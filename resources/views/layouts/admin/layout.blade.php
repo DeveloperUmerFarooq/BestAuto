@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     {{-- DataTables CSS --}}
-    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css"> --}}
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
 
@@ -69,9 +68,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     {{-- <script src="{{asset('assets/js/main.js')}}"></script> --}}
-
-    {{-- Data Table js --}}
-    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
 
     <script>
   document.addEventListener('DOMContentLoaded', function() {
